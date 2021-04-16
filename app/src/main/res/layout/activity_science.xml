@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="#FFF3E0">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Q1. Which is a type of Electrically-Erasable Programmable Read-Only Memory?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <RadioButton
+                android:id="@+id/q1op1"
+               style="@style/rbstyle"
+                android:text="Flash" />
+
+
+            <RadioButton
+                android:id="@+id/q1op2"
+                style="@style/rbstyle"
+                android:text="EPROM" />
+
+
+            <RadioButton
+                android:id="@+id/q1op3"
+                style="@style/rbstyle"
+                android:text="FRAM" />
+
+            <RadioButton
+                android:id="@+id/q1op4"
+                style="@style/rbstyle"
+                android:text="Flange" />
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q2. What constitutes the biggest part of Human brain?" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your answer"
+            android:id="@+id/q2"
+            android:inputType="textCapWords" />
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q3. Which countries posses the nuclear bomb?" />
+
+        <CheckBox
+            android:id="@+id/q3op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Australia" />
+
+
+        <CheckBox
+            android:id="@+id/q3op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Israel" />
+
+
+        <CheckBox
+            android:id="@+id/q3op3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Pakistan" />
+
+
+        <CheckBox
+            android:id="@+id/q3op4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Germany" />
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q4. Which of the following is a non metal that remains liquid at room temperature?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <RadioButton
+                android:id="@+id/q4op1"
+                style="@style/rbstyle"
+                android:text="Phosphorus" />
+
+
+            <RadioButton
+                android:id="@+id/q4op2"
+                style="@style/rbstyle"
+                android:text="Chlorine" />
+
+
+            <RadioButton
+                android:id="@+id/q4op3"
+                style="@style/rbstyle"
+                android:text="Helium" />
+
+            <RadioButton
+                android:id="@+id/q4op4"
+                style="@style/rbstyle"
+                android:text="Bromine" />
+
+        </RadioGroup>
+
+
+        <Button
+            style="@style/button"
+            android:text="submit"
+            android:onClick="submitbutton"/>
+
+    </LinearLayout>
+</ScrollView>

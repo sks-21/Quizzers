@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="#E3F2FD"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Q1.Which was the first Indian movie nominated for Oscar?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <RadioButton
+                android:id="@+id/q1op1"
+                style="@style/rbstyle"
+                android:text="Salaam Bombay" />
+
+
+            <RadioButton
+                android:id="@+id/q1op2"
+                style="@style/rbstyle"
+                android:text="Lagaan" />
+
+
+            <RadioButton
+                android:id="@+id/q1op3"
+                style="@style/rbstyle"
+                android:text="Mother India" />
+
+            <RadioButton
+                android:id="@+id/q1op4"
+                style="@style/rbstyle"
+                android:text="Slumdog Millionaire" />
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q2. Which is the highest grossing movie of all time ?" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your answer"
+            android:id="@+id/q2"
+            android:inputType="textCapWords" />
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q3. Which are the movies directed by Christopher Nolan ?" />
+
+        <CheckBox
+            android:id="@+id/q3op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Avengers:Infinity War" />
+
+
+        <CheckBox
+            android:id="@+id/q3op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Interstellar" />
+
+
+        <CheckBox
+            android:id="@+id/q3op3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Fast and Furious" />
+
+
+        <CheckBox
+            android:id="@+id/q3op4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="The Dark Knight" />
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q4. Which actor has won the most National Awards in India?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <RadioButton
+                android:id="@+id/q4op1"
+                style="@style/rbstyle"
+                android:text="Amitabh Bachchan" />
+
+
+            <RadioButton
+                android:id="@+id/q4op2"
+                style="@style/rbstyle"
+                android:text="Akshay Kumar" />
+
+
+            <RadioButton
+                android:id="@+id/q4op3"
+                style="@style/rbstyle"
+                android:text="Shahrukh Khan" />
+
+            <RadioButton
+                android:id="@+id/q4op4"
+                style="@style/rbstyle"
+                android:text="Aamir Khan" />
+
+        </RadioGroup>
+
+
+        <Button
+            style="@style/button"
+            android:text="submit"
+            android:onClick="submitbutton"/>
+
+    </LinearLayout>
+</ScrollView>

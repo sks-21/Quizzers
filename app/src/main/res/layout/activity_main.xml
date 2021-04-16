@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_science"
+            style="@style/headings"
+            android:background="#FB8C00"
+            android:text="Science and Technology" />
+
+        <TextView
+            android:id="@+id/textview_sports"
+            style="@style/headings"
+            android:background="#4CAF50"
+            android:text="Sports"
+
+            />
+
+        <TextView
+            android:id="@+id/textview_movies"
+            style="@style/headings"
+            android:background="#1E88E5"
+            android:text="Movies" />
+
+
+    </LinearLayout>
+</ScrollView>

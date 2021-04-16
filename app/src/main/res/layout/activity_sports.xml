@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="#E8F5E9"
+        android:orientation="vertical"
+        tools:context=".Sports">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Q1. Who among the following won the gold medal in 10,000 meters race in Asian Athletics Championship, 2017?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <RadioButton
+                android:id="@+id/q1op1"
+                style="@style/rbstyle"
+                android:text="Govindan Lakshmanan" />
+
+
+            <RadioButton
+                android:id="@+id/q1op2"
+                style="@style/rbstyle"
+                android:text="Adilet Kyshtabekov" />
+
+
+            <RadioButton
+                android:id="@+id/q1op3"
+                style="@style/rbstyle"
+                android:text="Gopi Thonakal" />
+
+            <RadioButton
+                android:id="@+id/q1op4"
+                style="@style/rbstyle"
+                android:text="Chen Chich" />
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q2. Who is the highest goal scorer in history of football?" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your answer"
+            android:id="@+id/q2"
+            android:inputType="textCapWords" />
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q3. Select all the Hockey Players who has represented India in Olympics." />
+
+        <CheckBox
+            android:id="@+id/q3op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Manpreet Singh" />
+
+
+        <CheckBox
+            android:id="@+id/q3op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Dhyan Chand" />
+
+
+        <CheckBox
+            android:id="@+id/q3op3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Zafar Iqbal" />
+
+
+        <CheckBox
+            android:id="@+id/q3op4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="P. R. Sreejesh" />
+
+
+        <TextView
+            style="@style/qnheading"
+            android:text="Q4. Who is the winner of the US Open 2019 Men's title?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <RadioButton
+                android:id="@+id/q4op1"
+                style="@style/rbstyle"
+                android:text="Roger Federer" />
+
+
+            <RadioButton
+                android:id="@+id/q4op2"
+                style="@style/rbstyle"
+                android:text="Rafael Nadal" />
+
+
+            <RadioButton
+                android:id="@+id/q4op3"
+                style="@style/rbstyle"
+                android:text="Daniil Medvedev " />
+
+            <RadioButton
+                android:id="@+id/q4op4"
+                style="@style/rbstyle"
+                android:text="Novak Djokovic" />
+
+        </RadioGroup>
+
+
+        <Button
+            style="@style/button"
+            android:text="submit"
+            android:onClick="submitbutton"/>
+
+    </LinearLayout>
+</ScrollView>
